@@ -35,3 +35,5 @@ df = get_bls_data(series=series, start=start, end=end)
 writer = pd.ExcelWriter('bls.xlsx', engine='xlsxwriter', options={'strings_to_numbers': True})
 df.to_excel(writer, sheet_name='Sheet1', index=False)
 writer.save()
+
+print('hello')
